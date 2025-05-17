@@ -1,0 +1,61 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umubii yini</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #36454F;
+        }
+        .container {
+            margin-top: 15%;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: white;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: #28a745;
+            color: white;
+        }
+        .no {
+            background-color: #ff1744;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Uyavuma yiini ukuthi umubii?🥹💖</h1> <! Usuyobhala igama laMuntu wakho ke nawe>
+        <div class="buttons">
+            <button class="btn yes" onclick="alert('Kungcono ngoba uyazibona Mubizaa! 💘')">Yes</button> <! La Uyobhala isibongo sakhe>
+            <button class="btn no" onmouseover="moveButton()">No</button>
+        </div>
+    </div>
+
+    <script>
+        function moveButton() {
+            let button = document.querySelector('.no');
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</body>
+</html>
